@@ -1,0 +1,94 @@
+<!doctype html>
+<htmL lang="en">
+<head>
+<meta charset="utf-8">
+<title>website</title>
+<style>
+div#nav > ul
+{
+margin:0px;
+paddind:0px;
+list-style-type:none;
+background-color:black;
+}
+div#nav > ul > li
+{
+float:left;
+}
+div#nav > ul::after
+{
+content: " ";
+display:block;
+clear:left;
+}
+div#nav > ul > li > a
+{
+text-decoration:none;
+background-color:black;
+color:white;
+display:inline-block;
+height:50px;
+width:150px;
+text-align:center;
+line-height:50px;
+font-family:Tahoma;
+}
+div#nav > ul > li > a:hover
+{
+background-color:lightgray;
+color:black;
+}
+*{
+margin: 20;
+padding: 20;
+}
+table{
+color:white;
+background-color:lightgray;
+border-collapse:collapse;
+font-size:24px;
+font-family:serif;
+padding:20px;
+text-align:-webkit-center;
+}
+
+</style>
+</head>
+<body style="background:url('bbb.jpg')">
+<div id="nav">
+<ul>
+<li><a href="website.html">Home</a></li>
+<li><a href="whatblood.html">Most needed Blood</a></li>
+<li><a href="camp.html">Camp</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="register1.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div>
+<h2><marquee bgcolor="gray"><font color="pink">DONATE BLOOD --> GIVE THE GIFT OF LIFE...!!!</font></marquee></h2>
+<img src="donar.jpg" alt="day"
+style="width:600px;height:200px;">
+<h2>Find a Donar:</h2>
+<form action="blood.php" method="post">
+<table>
+<tr>
+<td>Blood Group:</td>
+<td><select name="blood">								
+<option  value=0>AB+</option>
+<option  value=1>AB-</option>
+<option  value=2>O+</option>
+<option  value=3>O-</option>
+<option  value=4>A+</option>
+<option  value=5>A-</option>
+<option  value=6>B+</option>
+<option  value=7>B-</option>
+<option  value=8>A1B+</option>
+</select></td>
+</tr>
+<td align="center">
+<input type="submit" name="" value="Search"></td></tr>
+</table>
+</form>
+</body>
+
+</html>

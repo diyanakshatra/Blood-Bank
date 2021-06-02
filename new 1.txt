@@ -1,0 +1,31 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,"ajith");
+
+// Check connectionstate
+$bg="O+ve";
+$sql = "SELECT names,town,stt,tele FROM registration WHERE blood=$bg";
+//$result = $conn->query($sql);
+$result = $conn->query($sql);
+
+if ($result->num_rows>0) {
+    // output data of each row
+    while($row = $row=$result->fetch_assoc()) {
+        echo "id: " . $row["names"]. " - Name: " . $row["town"]. "- State:" . $row["stt"]. "- Phone:" . $row["tele"];
+    }
+}
+ 
+
+else
+{
+    echo "0 results";
+}
+
+
+$conn->close();
+//header("Location:website.html");
+?>

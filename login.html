@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login form</title>
+<link rel="stylesheet" href="slogin.css">
+<style>
+div#nav > ul
+{
+margin:0px;
+paddind:0px;
+list-style-type:none;
+background-color:black;
+}
+div#nav > ul > li
+{
+float:left;
+}
+div#nav > ul::after
+{
+content: " ";
+display:block;
+clear:left;
+}
+div#nav > ul > li > a
+{
+text-decoration:none;
+background-color:black;
+color:white;
+display:inline-block;
+height:50px;
+width:150px;
+text-align:center;
+line-height:50px;
+font-family:Tahoma;
+}
+div#nav > ul > li > a:hover
+{
+background-color:lightgray;
+color:black;
+}
+
+</style>
+</head>
+<body style="background-image:url('bb.jpg')"
+     "background-repeat: no-repeat;"
+  "background-attachment: fixed;"
+  "background-size: cover;">
+<div id="nav">
+<ul>
+<li><a href="website.html">Home</a></li>
+<li><a href="whatblood.html">Most needed Blood</a></li>
+<li><a href="camp.html">Camp</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="register1.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div><br><br>
+<h2><marquee bgcolor="green"><font color="pink">Sorry!! This page is not working at present..!!</font></marquee></h2><br><br>
+<form class="box" action="index.html" method="post">
+<h2>Login Here</h2>
+<input type="text"id="1" name="user_name_donar" placeholder="Email ID" />
+<input type="password"  id="2" name="password_donar" placeholder="Password" />
+<input type="submit" name="" value="Login">
+</form></body>
+</html>

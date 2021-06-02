@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login form</title>
+<link rel="stylesheet" href="scontact.css">
+<style>
+body 
+{
+  background-image:url('bbbb.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+div#nav > ul
+{
+margin:0px;
+paddind:0px;
+list-style-type:none;
+background-color:black;
+}
+div#nav > ul > li
+{
+float:left;
+}
+div#nav > ul::after
+{
+content: " ";
+display:block;
+clear:left;
+}
+div#nav > ul > li > a
+{
+text-decoration:none;
+background-color:black;
+color:white;
+display:inline-block;
+height:50px;
+width:150px;
+text-align:center;
+line-height:50px;
+font-family:Tahoma;
+}
+div#nav > ul > li > a:hover
+{
+background-color:lightgray;
+color:black;
+}
+
+</style>
+</head>
+<body>
+<div id="nav">
+<ul>
+<li><a href="website.html">Home</a></li>
+<li><a href="whatblood.html">Most needed Blood</a></li>
+<li><a href="camp.html">Camp</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="register1.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div>
+<br>
+<h2><marquee bgcolor="gray"><font color="pink">DONATE BLOOD --> GIVE THE GIFT OF LIFE...!!!</font></marquee></h2>
+<h2><font color="green">Contact Us</font></h2>
+<p>Moblie Number :  9500349889<br>
+Mail-Id  :  bbanytime@gmail.com<br>
+Contact us anytime..<br>
+We are ALWAYS AVAILABLE...!!!</p><Br>
+<h3><font color="green">For Users Feedback and  for their Suggestions..!</font></h3>
+<form action="feed.php" method="post">
+<table >
+<tr>
+<td>Name:</td>
+<td><input type="text" id="n" name="name" placeholder=" Enter name" value=""><br><br></td>
+</tr>
+<tr>
+<td>E-Mail Id:</td>
+<td><input type="text" id="email" name="mail" placeholder=" Enter mail-id" value=""><br><br></td>
+</tr>
+<tr>
+<td>Subject:</td>
+<td><input type="text" id="sub" name="sbt" placeholder="sub" value=""><br><br></td>
+</tr>
+<tr>
+<td>Feedback:</td>
+<td><textarea row="25" cols="25" name="give" placeholder="Give ur Feedback" value=""></textarea><br><br></td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<input type="submit" name="" value="Send"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
